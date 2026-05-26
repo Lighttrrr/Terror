@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TERRORBLADE</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Press+Start+2P&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0a0000;
+      color: #ff3366;
+      font-family: 'Press Start 2P', cursive;
+      text-align: center;
+      min-height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: radial-gradient(circle at center, rgba(255, 50, 50, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    h1 {
+      font-family: 'Creepster', cursive;
+      font-size: 6.5rem;
+      margin: 80px 0 30px 0;
+      color: #ff1133;
+      text-shadow: 
+        0 0 15px #ff1133,
+        0 0 40px #ff1133,
+        0 0 70px #8B0000,
+        0 0 100px #000;
+      letter-spacing: 8px;
+      animation: bloodglow 2s infinite alternate;
+    }
+
+    .subtitle {
+      font-size: 1.6rem;
+      color: #aa2233;
+      margin-bottom: 80px;
+      text-shadow: 0 0 20px #ff0000;
+    }
+
+    .hero {
+      width: 420px;
+      height: 420px;
+      margin: 0 auto 40px;
+      transition: transform 0.8s ease;
+      filter: drop-shadow(0 0 40px #ff1133);
+      cursor: grab;
+    }
+
+    .hero:hover {
+      transform: rotateY(35deg) rotateX(15deg) scale(1.08);
+    }
+
+    @keyframes bloodglow {
+      from { text-shadow: 0 0 15px #ff1133, 0 0 40px #ff1133; }
+      to { text-shadow: 0 0 25px #ff3366, 0 0 60px #ff0000, 0 0 90px #8B0000; }
+    }
+  </style>
+</head>
+<body>
+  <h1>TERRORBLADE</h1>
+  <p class="subtitle">DEMON OF THE MIRROR REALM</p>
+  
+  <img src="https://i.imgur.com/5zK8v9T.png" class="hero" alt="Terrorblade">
+</body>
+</html>
